@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LUCKY抽籤</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="card">
+        <p class="eyebrow">今日運勢抽籤</p>
+        <h1>LUCKY 抽籤</h1>
+
+        <div class="panel">
+          <label for="nameInput">新增抽籤對象</label>
+          <div class="input-row">
+            <input id="nameInput" type="text" maxlength="20" placeholder="例如：阿明" />
+            <button id="addNameBtn" class="secondary">加入</button>
+          </div>
+        </div>
+
+        <div class="quick-add">
+          <button class="tag" data-name="阿明">阿明</button>
+          <button class="tag" data-name="小華">小華</button>
+          <button class="tag" data-name="小美">小美</button>
+          <button class="tag" data-name="大雄">大雄</button>
+          <button class="tag" data-name="琪琪">琪琪</button>
+          <button class="tag" data-name="阿寶">阿寶</button>
+        </div>
+
+        <div class="result-box">
+          <p class="label">抽籤結果</p>
+          <div id="resultName" class="result-name">等待抽籤</div>
+          <div id="resultTag" class="result-tag">準備中...</div>
+        </div>
+
+        <div class="actions">
+          <button id="drawBtn" class="primary">開始抽籤</button>
+          <button id="resetBtn" class="ghost">重置</button>
+        </div>
+
+        <div class="list-panel">
+          <div class="list-header">
+            <h2>抽籤名單</h2>
+            <span id="countBadge">0 人</span>
+          </div>
+          <ul id="nameList" class="name-list"></ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
